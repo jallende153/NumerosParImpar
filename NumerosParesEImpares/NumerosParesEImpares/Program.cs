@@ -21,7 +21,7 @@ namespace NumerosParesEImpares
             //realizar los cálculos para averiguar si el número ingresado es par o impar 
             Console.Write("Ingrese un número: ");
             n = Convert.ToInt32(Console.ReadLine());
-            if (Math.Pow(-1, n) == 1)
+            if (n % 2 == 0)
             {
                 // muestra el mensaje en pantalla
                 Console.WriteLine("El Número {0} es par", n);
