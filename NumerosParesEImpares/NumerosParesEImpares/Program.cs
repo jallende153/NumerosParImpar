@@ -14,8 +14,6 @@ namespace NumerosParesEImpares
             //===============================================
             // declaracion de varibles 
             int n;
-            int e;
-            double d;
             //===============================================
             
             //===============================================
@@ -23,13 +21,15 @@ namespace NumerosParesEImpares
             //realizar los cálculos para averiguar si el número ingresado es par o impar 
             Console.Write("Ingrese un número: ");
             n = Convert.ToInt32(Console.ReadLine());
-            e = n / 2;
-            d = (double)n / 2;
-            if (d - e == 0)
+            if (Math.Pow(-1, n) == 1)
+            {
                 // muestra el mensaje en pantalla
-                Console.WriteLine("El Número " + n + " es par");
+                Console.WriteLine("El Número {0} es par", n);
+            }
             else
-                Console.WriteLine("El Número " + n + " es impar");
+            {
+                Console.WriteLine("El Número {0} es impar", n);
+            }
             Console.ReadKey();
             //===============================================
         }
